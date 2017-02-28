@@ -24,4 +24,15 @@ class HangmanPhrases {
         return phrases.object(at: index) as! String
     }
     
+    func guesswasmade(guess: String, phrase: String) -> Int {
+        var index = 0
+        for char in phrase.characters{
+            if char == Character(guess){
+                return index
+            }
+            index += 1
+        }
+        return -1
+    }
+    
 }
