@@ -52,7 +52,7 @@ class HangmanViewController: UIViewController,UITextFieldDelegate  {
         var newStr:String = " "
         for char in phrase.characters {
            if char == " " {
-            newStr = newStr + " "
+            newStr = newStr + "  "
             }
            else {
             newStr = newStr + "_ "
@@ -91,7 +91,7 @@ class HangmanViewController: UIViewController,UITextFieldDelegate  {
                     newStr = newStr + String(char) + " "
                 }
                 else if char == " " {
-                    newStr = newStr + " "
+                    newStr = newStr + "  "
                 }
                     
                 else {
